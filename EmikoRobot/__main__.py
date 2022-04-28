@@ -86,18 +86,15 @@ first_name_pm = ""
 PM_START_TEXT = """
 ────「 {} 」────
 *Hey there {}!,*
-* I am an advance group management bot with a lots of Features. My Anime theme is from Takt OP. Destiny *
-
-➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳
-ღღ    *Uptime:* `{}`    ღღ
-➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳
-
-♡ Try The Help Button below To Know My Abilities[.](https://telegra.ph/file/9473d3f0e989ee67bb4cd.jpg) ♡
+×× I'm a Spy! A Anime themed advance group management bot with a lot of advance Features! ××
+➖➖➖➖➖➖➖➖➖➖
+×× Try The Help & Command Buttons Below To Know My Abilities ××
+➖➖➖➖➖➖➖➖➖➖ (https://telegra.ph/file/9473d3f0e989ee67bb4cd.jpg) ♡
 """
 
 
 HELP_STRINGS = """
-Hello there, I'm Unmei Bot! Some people do call me Destiny.
+Hello there, I'm Zoro Bot! Some people do call me Destiny.
 To make me functional, make sure that i have enough rights in your group[.](https://telegra.ph/file/26c430892d2ce0e407443.jpg)
 Helpful commands:
 
@@ -109,16 +106,15 @@ List of all the Modules:
     dispatcher.bot.first_name, "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.")
 buttons = [
     [
-        InlineKeyboardButton(text=f"『 ➕ Add Me 』",url=f"https://telegram.dog/Destiny_x_Bot?startgroup=true"),
-        InlineKeyboardButton(text="『 🙇 Help 』", callback_data="help_back")
+        InlineKeyboardButton(text=f"➕ Add Zoro in Your Group",url=f"https://telegram.dog/Destiny_x_Bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="『 🌟 Anime Channel 』",url="https://t.me/trending_anime_series"),
-        InlineKeyboardButton(text="『 ❔ Otaku Talks 』", url="https://t.me/tas_support")
+        InlineKeyboardButton(text="⚙️ EST",url="https://t.me/est_official"),
+        InlineKeyboardButton(text="🎉 EST News", url="https://t.me/estanimes")
+        InlineKeyboardButton(text="📮 G-Logs",url="https://t.me/zoro_logs_support")
     ],
     [
-        InlineKeyboardButton(text="『 🚑 Support 』",url=f"https://telegram.dog/unmei_support"),
-        InlineKeyboardButton(text="『 📢 Updates 』",url="https://t.me/unmei_updates")
+        InlineKeyboardButton(text="📚 Help And Commands", callback_data="help_back")
     ]
 ]
 
