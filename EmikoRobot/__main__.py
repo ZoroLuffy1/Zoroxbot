@@ -84,7 +84,7 @@ uptime_pm = get_readable_time((time.time() - StartTime))
 first_name_pm = ""
 
 PM_START_TEXT = """
-────「 {} 」────
+────「Hey, I'm Zoro」────
 *Hey there {}!,*
 ×× I'm a Spy! A Anime themed advance group management bot with a lot of advance Features! ××
 ➖➖➖➖➖➖➖➖➖➖
@@ -209,7 +209,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="[『 ⫷ Back 』]", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
                     ),
                 )
 
