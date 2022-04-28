@@ -20,7 +20,7 @@ from telegram.ext import CallbackContext, CallbackQueryHandler
 
 info_btn = "More Information"
 kaizoku_btn = "Kaizoku ☠️"
-kayo_btn = "Kayo 🏴‍☠️"
+est_btn = "Est 🏴‍☠️"
 prequel_btn = "⬅️ Prequel"
 sequel_btn = "Sequel ➡️"
 close_btn = "Close ❌"
@@ -378,12 +378,12 @@ def awake(update: Update, context: CallbackContext):
     IMAGE = "https://telegra.ph/file/a4f96c30605ece22664ea.jpg"
     msg = ""
     msg += f"{AWAKE_MSG}"
-    support = "t.me/unmei_support"
-    owner = "t.me/yameteee_yamete_kudasai"
+    support = "t.me/estanimes"
+    owner = "t.me/asta_est"
     buttons = [
 	[
             InlineKeyboardButton("『 ⚡ Support ⚡ 』", url=support),
-	    InlineKeyboardButton("『 ♥ Maestro ♥ 』", url=owner)
+	    InlineKeyboardButton("『 ♥ Master ♥ 』", url=owner)
         ]
     ]
     update.effective_message.reply_photo(
@@ -585,17 +585,17 @@ def site_search(update: Update, context: CallbackContext, site: str):
             more_results = False
             result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKaizoku</code>"
 
-    elif site == "kayo":
-        search_url = f"https://animekayo.com/?s={search_query}"
+    elif site == "est":
+        search_url = f"https://animehindisub.com/?s={search_query}"
         html_text = requests.get(search_url).text
         soup = bs4.BeautifulSoup(html_text, "html.parser")
         search_result = soup.find_all("h2", {'class': "title"})
 
-        result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKayo</code>: \n"
+        result = f"<b>Search results for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeHindiSub</code>: \n"
         for entry in search_result:
 
             if entry.text.strip() == "Nothing Found":
-                result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeKayo</code>"
+                result = f"<b>No result found for</b> <code>{html.escape(search_query)}</code> <b>on</b> <code>AnimeHindiSub</code>"
                 more_results = False
                 break
 
@@ -635,7 +635,7 @@ __help__ = """
 ❂ /airing <anime>: returns anime airing info.
 ❂ /whatanime <anime>: reply to gif or photo.
 ❂ /kaizoku <anime>: search an anime on animekaizoku.com
-❂ /kayo <anime>: search an anime on animekayo.com
+❂ /est <anime>: search an anime on animehindisub.com
 
  「 Anime Quotes 」
 ❂ /animequotes: for anime quotes randomly as photos.
@@ -656,7 +656,7 @@ MANGA_HANDLER = DisableAbleCommandHandler("manga", manga, run_async=True)
 USER_HANDLER = DisableAbleCommandHandler("user", user, run_async=True)
 UPCOMING_HANDLER = DisableAbleCommandHandler("upcoming", upcoming, run_async=True)
 KAIZOKU_SEARCH_HANDLER = DisableAbleCommandHandler("kaizoku", kaizoku, run_async=True)
-KAYO_SEARCH_HANDLER = DisableAbleCommandHandler("kayo", kayo, run_async=True)
+EST_SEARCH_HANDLER = DisableAbleCommandHandler("est", est, run_async=True)
 BUTTON_HANDLER = CallbackQueryHandler(button, pattern='anime_.*')
 
 dispatcher.add_handler(REQUEST_HANDLER)
@@ -668,16 +668,16 @@ dispatcher.add_handler(MANGA_HANDLER)
 dispatcher.add_handler(AIRING_HANDLER)
 dispatcher.add_handler(USER_HANDLER)
 dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
-dispatcher.add_handler(KAYO_SEARCH_HANDLER)
+dispatcher.add_handler(EST_SEARCH_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 
 __mod_name__ = "Anime"
 __command_list__ = [
     "anime", "manga", "character", "user", "upcoming", "kaizoku", "airing",
-    "kayo", "alive", "request"
+    "est", "alive", "request"
 ]
 __handlers__ = [
     ANIME_HANDLER, CHARACTER_HANDLER, MANGA_HANDLER, USER_HANDLER,
-    UPCOMING_HANDLER, KAIZOKU_SEARCH_HANDLER, KAYO_SEARCH_HANDLER,
+    UPCOMING_HANDLER, KAIZOKU_SEARCH_HANDLER, EST_SEARCH_HANDLER,
     BUTTON_HANDLER, AIRING_HANDLER, REQUEST_HANDLER
 ]
