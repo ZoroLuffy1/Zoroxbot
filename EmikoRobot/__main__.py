@@ -94,7 +94,7 @@ PM_START_TEXT = """
 
 
 HELP_STRINGS = """
-Hello there, I'm Zoro Bot! Some people do call me Destiny.
+Hello there, I'm Zoro Bot! Some Pirates do call me Pirate Hunter.
 To make me functional, make sure that i have enough rights in your group[.](https://telegra.ph/file/26c430892d2ce0e407443.jpg)
 Helpful commands:
 
