@@ -375,7 +375,7 @@ def manga(update: Update, context: CallbackContext):
 
 def awake(update: Update, context: CallbackContext):
     message = update.effective_message
-    IMAGE = "https://telegra.ph/file/a4f96c30605ece22664ea.jpg"
+    IMAGE = "https://telegra.ph/file/1cd4f92f18b704d9b78df.jpg"
     msg = ""
     msg += f"{AWAKE_MSG}"
     support = "t.me/estanimes"
