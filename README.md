@@ -19,8 +19,8 @@
 
 ## Credits -
 
-## • [Kirito](https://github.com/ZoroLuffy1)
+# • [Kirito](https://github.com/ZoroLuffy1)
 
-## • [Majid](https://github.com/majid-nex)
+# • [Majid](https://github.com/majid-nex)
 
-## • [EST](https://t.me/estanimes)
+# • [EST](https://t.me/estanimes)
