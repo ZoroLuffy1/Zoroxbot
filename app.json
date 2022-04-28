@@ -9,8 +9,8 @@
          "naorobot"
       ],
     
-   "logo":    "https://telegra.ph/file/3aacd6c0cfe8c852e43c0.jpg",  
-   "repository": "https://github.com/DarkSoulxUltra/EmikoRobot",
+   "logo":    "https://telegra.ph/file/9ca2f31aff6032b849f63.jpg",  
+   "repository": "https://github.com/ZoroLuffy1/Zoroxbot",
    "addons": [
           {
          "options": {
@@ -46,7 +46,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "866830519"
+         "value": "2092233990"
      },
 
       "STRING_SESSION": {
@@ -64,7 +64,7 @@
       },
       "BOT_USERNAME": {
          "description": "username of your bot without the @",
-         "value": "Destiny_x_Bot"
+         "value": "ZoroXRobot"
       },
 
       "BOT_ID": {
@@ -74,12 +74,12 @@
 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "yameteee_yamete_kudasai"
+         "value": "asta_est"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "unmei_support"
+         "value": "estanimes"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
@@ -97,12 +97,12 @@
      "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1001665772310"
+         "value": "-1001797512280"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-1001667046380"
+         "value": "-1001797512280"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
